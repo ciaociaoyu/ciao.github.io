@@ -21,36 +21,60 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #333;
         }
-        .paper {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 5px;
+        .section {
+            margin: 20px 0;
         }
-        .paper img {
-            max-width: 100%;
-            border-radius: 5px;
+        .photo img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .intro, .contact, .research, .publications {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .intro p {
+            text-align: center;
+        }
+        .paper {
             margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Jichao Yu (Ciao)</h1>
-        <p>1234 Steelwood Rd, Columbus, OH</p>
-        <p>Phone: +1 (614) 264-2313 | Email: <a href="mailto:ciao_yu@outlook.com">ciao_yu@outlook.com</a></p>
     </header>
     <div class="container">
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>Machine Learning Systems (ML systems)</p>
+        <section class="photo">
+            <img src="IMG_3160.jpg" alt="Jichao Yu's Photo">
         </section>
-        
-        <section id="publications">
+        <section class="intro section">
+            <h2>About Me</h2>
+            <p>My name is Jichao (Ciao) Yu. I graduated with a Bachelor's degree from Wuhan University of Science and Technology and a Master's degree from Ohio State University. I am currently pursuing a Ph.D. at the University of Georgia. My research interests include ML systems, federated learning, and multi-objective optimization.</p>
+        </section>
+        <section class="contact section">
+            <h2>Contact Information</h2>
+            <p>Address: 1234 Steelwood Rd, Columbus, OH</p>
+            <p>Phone: +1 (614) 264-2313</p>
+            <p>Email: <a href="mailto:ciao_yu@outlook.com">ciao_yu@outlook.com</a></p>
+        </section>
+        <section class="research section">
+            <h2>Research Interests</h2>
+            <p>Machine Learning Systems (ML systems), Federated Learning, Multi-objective Optimization</p>
+        </section>
+        <section class="publications section">
             <h2>Publications</h2>
             <div class="paper">
                 <h3>Prediction Model Hadoop-based for High-risk Students</h3>
@@ -77,11 +101,6 @@
                 <p><strong>Co-Author:</strong> Jichao Yu</p>
                 <p><strong>Published In:</strong> Changjiang Information & Communications, 2022,35(12):123-126.</p>
             </div>
-        </section>
-        
-        <section id="photo">
-            <h2>Photo</h2>
-            <img src="IMG_3160.jpg" alt="Jichao Yu's Photo">
         </section>
     </div>
 </body>
