@@ -1,137 +1,163 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<head>
+  <meta charset="UTF-8">
   <title>Jichao Yu's Personal Website</title>
-  
   <meta name="author" content="Jichao Yu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  
-
-  <!-- <script src=”main.js” defer></script> -->
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-size: 14px; /* 调小正文字体 */
+    }
     header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .profile-image {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section p, .section ul {
+      margin: 10px 0;
+    }
+    .section ul {
+      padding-left: 20px;
+    }
+    .section ul li {
+      margin-bottom: 5px;
+    }
+    .contact-info {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .table {
+      width: 100%;
+      margin: 20px 0;
+      border-collapse: collapse;
+    }
+    .table th, .table td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
   </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:10px">
-      <td style="padding:10px">
+  <header>
+    <h1>Jichao Yu (Ciao)</h1>
+  </header>
 
-        <section id="Home" style="padding-top:2vh;padding-bottom:1vh;">       
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:10px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle;line-height: 150%;">
-				<p style="text-align:center; font-size: 24px; font-weight: bold;">
-					Jichao (Ciao) Yu 
-				</p>
-			  <p style="text-align:center">
-                ciao_yu@outlook.com &nbsp;/&nbsp; <a href="https://github.com/ciaociaoyu" style="text-decoration: none; color: inherit;">Github </a> &nbsp;/&nbsp; <a href="CV.pdf" target="_blank" style="text-decoration: none; color: inherit;">CV</a>
-              </p>
-              <p>
-                I am a first-year Ph.D. student at the University of Georgia, under the mentorship of Prof. Ninghao Liu. I completed my undergraduate studies at Wuhan University of Science and Technology and obtained my master's degree from Ohio State University. My specific areas of research include:
-              </p>
-				<ul>
-                    <li><strong>ML System</strong>. </li>
-                    <li><strong>Federated Learning.</li>
-                    <li><strong>MultiObject Optimization.</li>
-				</ul>
-              
-            </td>
-            <td style="padding:2.5%;width:25%;max-width:25%">
-              <a href="Ciao.jpg"><img style="width:100%;max-width:100%" alt="Jichao Yu's Photo" src="Ciao.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        </section>
+  <div class="container">
+    <section id="Home" class="section">
+      <img src="Ciao.jpg" alt="Jichao Yu's Photo" class="profile-image">
+      <p style="text-align:center; font-size: 24px; font-weight: bold;">
+        Jichao (Ciao) Yu
+      </p>
+      <p style="text-align:center">
+        ciao_yu@outlook.com &nbsp;/&nbsp; <a href="https://github.com/ciaociaoyu" style="text-decoration: none; color: inherit;">Github</a> &nbsp;/&nbsp; <a href="CV.pdf" target="_blank" style="text-decoration: none; color: inherit;">CV</a>
+      </p>
+      <p>
+        I am a first-year Ph.D. student at the University of Georgia, under the mentorship of Prof. Ninghao Liu. I completed my undergraduate studies at Wuhan University of Science and Technology and obtained my master's degree from Ohio State University. My specific areas of research include:
+      </p>
+      <ul>
+        <li><strong>ML System</strong></li>
+        <li><strong>Federated Learning</strong></li>
+        <li><strong>MultiObject Optimization</strong></li>
+      </ul>
+    </section>
 
-        <section id="News">
-            <h2 style="padding-bottom:1vh;"> News </h2>
-            <table style="line-height:150%" class="table table-hover table-striped">
-                <tr><td style="width:20%;">2024/05 - I joined the DLGA lab at the University of Georgia as a research assistant. </td></tr>
-            </table>
-        </section>
+    <section id="News" class="section">
+      <h2>News</h2>
+      <table class="table table-hover table-striped">
+        <tr><td>2024/05 - I joined the DLGA lab at the University of Georgia as a research assistant.</td></tr>
+      </table>
+    </section>
 
-        <br>
+    <section id="Research" class="section">
+      <h2>Selected Publications</h2>
+      <table class="table table-hover table-striped">
+        <tr>
+          <td>
+            <p><strong>Prediction Model Hadoop-based for High-risk Students</strong></p>
+            <p>Author: Jichao Yu</p>
+            <p><em>(Advances in Computer Science Research)</em>, Volume 93, 2019:2352–538X.</p>
+            <a href="https://www.atlantis-press.com/proceedings/mmsta-19/125925450">[Link]</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Research on Personalized Learning Space in Internet and Big Data Environment</strong></p>
+            <p>Author: Jichao Yu</p>
+            <p><em>(Software Guide)</em>, 2019,12:1672–7800.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Features Selection of Exponential Distribution-based Unbalanced Data</strong></p>
+            <p>Co-Author: Jichao Yu</p>
+            <p><em>(Statistics & Decision)</em>, 2019,20:1002–6487.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Research on Prediction of 'Four Challenged Students' Based on Big Data</strong></p>
+            <p>Co-Author: Jichao Yu</p>
+            <p><em>(Information and Communications)</em>, 2019,9:1673–1131.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Analysis on the technical framework of virtual college students’ mental health service center</strong></p>
+            <p>Co-Author: Jichao Yu</p>
+            <p><em>(Changjiang Information & Communications)</em>, 2022,35(12):123-126.</p>
+          </td>
+        </tr>
+      </table>
+    </section>
 
-        <section id="Research">
-        <h2>Selected Publications</h2>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-           <tr>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Prediction Model Hadoop-based for High-risk Students</papertitle>
-                </p>
-                <strong>Author:</strong> Jichao Yu<br>
-                <em><strong>(Advances in Computer Science Research)</strong>, Volume 93, 2019:2352–538X.</em>
-                <br>
-                <a href="https://www.atlantis-press.com/proceedings/mmsta-19/125925450">[Link]</a>
-              </td>
-            </tr>
-
-           <tr>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Research on Personalized Learning Space in Internet and Big Data Environment</papertitle>
-                </p>
-                <strong>Author:</strong> Jichao Yu<br>
-                <em><strong>(Software Guide)</strong>, 2019,12:1672–7800.</em>
-              </td>
-            </tr>
-
-           <tr>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Features Selection of Exponential Distribution-based Unbalanced Data</papertitle>
-                </p>
-                <strong>Co-Author:</strong> Jichao Yu<br>
-                <em><strong>(Statistics & Decision)</strong>, 2019,20:1002–6487.</em>
-              </td>
-            </tr>
-
-           <tr>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Research on Prediction of 'Four Challenged Students' Based on Big Data</papertitle>
-                </p>
-                <strong>Co-Author:</strong> Jichao Yu<br>
-                <em><strong>(Information and Communications)</strong>, 2019,9:1673–1131.</em>
-              </td>
-            </tr>
-
-           <tr>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Analysis on the technical framework of virtual college students’ mental health service center</papertitle>
-                </p>
-                <strong>Co-Author:</strong> Jichao Yu<br>
-                <em><strong>(Changjiang Information & Communications)</strong>, 2022,35(12):123-126.</em>
-              </td>
-            </tr>
-        </tbody></table>
-        </section>
-		<section id="Teaching">
-        <h2 style="padding-bottom:1vh;">Teaching</h2>
-        <table style="line-height:150%" class="table table-hover table-striped">
-          <tbody><tr><td style="width:20%;">Teaching Assistant of ECE3561/8639 Advances Digital Design, The Ohio State University, Spring 2024</td></tr>
-          <tr><td style="width:20%;">Teaching Assistant of ECE3561/9030 Advances Digital Design, The Ohio State University, Fall 2023</td></tr>
-          <tr><td style="width:20%;">Teaching Assistant of CSCI3050/8630 Signals & System, The Ohio State University, Spring 2023</td></tr>
-        </tbody></table> 
-        </section>
-      </td>
-    </tr>
-  </table>
+    <section id="Teaching" class="section">
+      <h2>Teaching</h2>
+      <table class="table table-hover table-striped">
+        <tr><td>Teaching Assistant of ECE3561/8639 Advances Digital Design, The Ohio State University, Spring 2024</td></tr>
+        <tr><td>Teaching Assistant of ECE3561/9030 Advances Digital Design, The Ohio State University, Fall 2023</td></tr>
+        <tr><td>Teaching Assistant of CSCI3050/8630 Signals & System, The Ohio State University, Spring 2023</td></tr>
+      </table>
+    </section>
+  </div>
 </body>
 
 </html>
