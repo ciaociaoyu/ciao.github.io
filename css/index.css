@@ -226,6 +226,8 @@ header .w1280 .nav a.active {
 
 main {
   width: 100%;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
 main .w1280 {
